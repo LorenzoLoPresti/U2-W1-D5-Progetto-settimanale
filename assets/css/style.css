@@ -22,6 +22,16 @@ main .articles {
   padding: 0px 70px 30px;
 }
 
+.data {
+  font-weight: 400;
+  color: rgb(158, 157, 157);
+}
+
+.data span {
+  padding-bottom: 7px;
+  margin: 0 4px;
+}
+
 /* HEADER */
 
 /* NAV */
@@ -143,7 +153,7 @@ aside h5 {
 main .trending-section {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgray;
   padding: 0 5%;
 }
 
@@ -175,11 +185,6 @@ main .trending-section {
   font-weight: 700;
 }
 
-.trending-news p span {
-  margin: 0 4px;
-  font-weight: 400;
-}
-
 .trending-news div:first-child {
   margin-top: 8px;
 }
@@ -194,11 +199,6 @@ main .trending-section {
 .articles h3 {
   font-weight: 700;
   margin-bottom: 10px;
-}
-
-.trending-news .data {
-  font-weight: 400;
-  color: gray;
 }
 
 /* ARTICLES LIST */
@@ -284,4 +284,117 @@ aside .topics-container p {
 
 aside a {
   color: rgb(103, 103, 103);
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 1400px) {
+  .title-container div {
+    margin-left: 15%;
+    width: 800px;
+  }
+
+  .trending-on-medium {
+    margin: 0 8%;
+  }
+
+  section.trending-section {
+    padding: 0 12%;
+  }
+
+  article.articles {
+    padding: 50px 12% 0;
+  }
+
+  .articles .articles-container {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  header .start-reading .m-container {
+    display: none;
+  }
+
+  div.trending-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 6em;
+  }
+
+  .articles {
+    flex-direction: column-reverse;
+  }
+
+  aside .topics-container {
+    margin-right: 0;
+  }
+
+  aside .footer-links {
+    margin-right: 0;
+  }
+
+  aside .footer-links p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  article.articles {
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  div.trending-container {
+    width: 100%;
+  }
+  .trending-news div:last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .navbar-rightside ul .li-disappear {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  header .title-container h2 {
+    width: 100%;
+  }
+
+  .navbar .navbar-rightside ul .sign-in {
+    display: none;
+  }
+
+  header .title-container div {
+    padding-top: 130px;
+  }
+
+  .articles .articles-container h3 {
+    font-size: 1em;
+  }
+
+  .articles .articles-container div > img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .articles-container > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articles-container div h4 {
+    display: none;
+  }
 }
