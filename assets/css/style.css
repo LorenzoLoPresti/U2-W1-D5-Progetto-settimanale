@@ -219,6 +219,7 @@ main .articles {
 
 .articles .articles-container h3 {
   font-size: 1.2em;
+  padding-right: 10px;
 }
 
 .articles .articles-container > div {
@@ -361,6 +362,20 @@ aside a {
   .navbar .navbar-rightside ul .li-disappear {
     display: none;
   }
+
+  .articles-container > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articles-container div h4 {
+    display: none;
+  }
+
+  .articles .articles-container div > img {
+    width: 150px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -382,19 +397,5 @@ aside a {
 
   .articles .articles-container h3 {
     font-size: 1em;
-  }
-
-  .articles .articles-container div > img {
-    width: 120px;
-    height: 100px;
-  }
-
-  .articles-container > div {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .articles-container div h4 {
-    display: none;
   }
 }
