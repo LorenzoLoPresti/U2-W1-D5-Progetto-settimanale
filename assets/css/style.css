@@ -125,14 +125,15 @@ header .title-container h2 {
   width: 450px;
 }
 
-header .title-container button {
+header .title-container a {
+  text-align: center;
   font-size: 1.3em;
-  padding: 8px 1em;
+  padding: 10px 1em;
   border-radius: 25px;
   border: none;
   background-color: black;
   color: white;
-  width: 215px;
+  width: 180px;
 }
 
 /* MAIN */
