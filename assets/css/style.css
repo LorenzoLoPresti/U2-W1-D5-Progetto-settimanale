@@ -158,7 +158,7 @@ main .trending-section {
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid lightgray;
-  padding: 0 5%;
+  padding: 0 5% 16px;
 }
 
 .trending-news {
