@@ -80,20 +80,32 @@ header .start-reading .title-container {
   align-items: center;
 }
 
-header .start-reading .m-container {
-  overflow-x: hidden;
-  overflow-y: hidden;
+header .start-reading {
+  display: flex;
+  position: relative;
 }
-header .start-reading svg {
+/* 
+header .start-reading .title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+header .start-reading .m-container {
   position: absolute;
+  right: 0;
+  top: 63px;
+}
+
+header .title-container {
+  margin-left: 5%;
 }
 
 header .title-container div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 7em;
-  padding: 93px 0;
+  padding: 150px 0 93px;
 }
 
 header .title-container h2 {
@@ -131,12 +143,16 @@ aside h5 {
 main .trending-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   border-bottom: 1px solid grey;
+  padding: 0 5%;
 }
 
 .trending-news {
   display: flex;
+}
+
+.trending-container {
+  width: 33%;
 }
 
 .trending-news div:first-child {
@@ -232,6 +248,11 @@ aside {
 
 aside h5 {
   margin-bottom: 1em;
+}
+
+aside .aside-container {
+  position: sticky;
+  top: 100px;
 }
 
 aside .topics-container,
